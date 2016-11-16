@@ -1,0 +1,45 @@
+html {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    background-image: url('/assets/img/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.main-content {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.event-logo {
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 80%;
+}
+
+a.gen-button {
+    display: block;
+    border: 3px solid white;
+    font-family: arial;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}

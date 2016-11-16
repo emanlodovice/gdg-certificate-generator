@@ -1,0 +1,13 @@
+img {
+    width: 1000px;
+}
+
+.name {
+    width: 1000px;
+    font-family: arial;
+    position: absolute;
+    top: 300px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
