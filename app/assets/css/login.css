@@ -28,18 +28,47 @@ body {
     max-width: 80%;
 }
 
-a.gen-button {
+.center {
     display: block;
-    border: 3px solid white;
     font-family: arial;
-    font-size: 20px;
     color: white;
     text-decoration: none;
     padding: 10px;
     width: 300px;
     text-align: center;
     margin: 0 auto;
+}
+
+.gen-button {
+    border: 3px solid white;
+    font-size: 20px;
     margin-top: 30px;
     border-radius: 5px;
     text-transform: uppercase;
+    background-color: Transparent;
+    cursor: pointer;
+}
+
+input {
+    border: 3px solid white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #333 !important;
+}
+
+.note {
+    font-size: 17px;
+    margin-top: 30px;
+    padding: 5px;
+}
+
+.error {
+    color: red;
+    margin-top: 0px;
+    padding: 5px;
+}
+
+.hidden {
+    display: none;
 }

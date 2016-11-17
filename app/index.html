@@ -14,8 +14,14 @@
     <body>
         <div class="main-content">
             <img src="/assets/img/gdg-cebu-logo-white.png" class="event-logo"/>
-            <a href="/certificate.html" class="gen-button">Get Certificate</a>
+            <form action="/certificate.html">
+                <p class="note center">The order # is in your eventbrite ticket :)</p>
+                <p class="error center hidden"></p>
+                <input name="order" placeholder="Order #" autofocus class="center">
+                <button class="gen-button center">Get Certificate</button>
+            </form>
         </div>
+        <script src="/assets/js/jquery.js"></script>
         <script src="/assets/js/login.js"></script>
     </body>
 </html>
