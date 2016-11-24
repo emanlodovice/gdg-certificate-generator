@@ -42,11 +42,35 @@ body {
 .gen-button {
     border: 3px solid white;
     font-size: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
     border-radius: 5px;
     text-transform: uppercase;
     background-color: Transparent;
     cursor: pointer;
+}
+
+.others {
+    width: 320px;
+    display: block;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.others a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    width: 130px;
+    font-family: arial;
+    border: 2px solid white;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
 }
 
 input {
