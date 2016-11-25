@@ -1,13 +1,3 @@
-var config = {
-    apiKey: "AIzaSyC09C-ufT_h8ZjjwXx_10I0zRVxbckmlcI",
-    authDomain: "gdg-cebu-certificate.firebaseapp.com",
-    databaseURL: "https://gdg-cebu-certificate.firebaseio.com",
-    storageBucket: "gdg-cebu-certificate.appspot.com",
-    messagingSenderId: "795264595289"
-};
-firebase.initializeApp(config);
-
-
 var ref = firebase.database().ref('volunteers/');
 
 ref.on('value', function(data) {
@@ -18,9 +8,9 @@ ref.on('value', function(data) {
     }
 });
 
-
 function addVolunteer(id, name) {
-    var template = '<li><span class="triangle"></span><a href="">' + name + '</a></li>';
+    var url = '/volunteer_cert.html?id=' + id;
+    var template = '<li><span class="triangle"></span><a href="' + url + '">' + name + '</a></li>';
     $('ul').append(template);
 }
 
