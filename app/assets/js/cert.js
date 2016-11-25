@@ -6,7 +6,8 @@ var index = search.indexOf(key);
 if (index < 0) {
     window.location = '/';
 }
-var orderId = search.substring(index + key.length);
+var orderId = decodeURIComponent(search.substring(index + key.length));
+orderId = orderId.replace('#', '');
 
 var apiEndPoint = 'https://www.eventbriteapi.com/v3/orders/' + orderId +
     '/?token=' + 'MA54QS2FTNFGVCOEJ3HJ';
