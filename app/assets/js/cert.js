@@ -1,6 +1,5 @@
-var event_id = '28517412348';
+var event_id = '31606688456';
 $(document).ready(activate);
-
 function activate() {
     var search = window.location.search;
     var key = '?order=';
@@ -45,7 +44,7 @@ function handleEventBriteCert(orderId) {
                 window.location = '/?error=Invalid Order';
             }
         },
-        error: function() {
+        error: function(e) {
             window.location = '/?error=Invalid Order';
         }
     });
