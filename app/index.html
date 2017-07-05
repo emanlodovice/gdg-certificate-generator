@@ -11,20 +11,25 @@
         <meta property="og:image" content="/assets/img/background.png" />
         <link rel="shortcut icon" href="/assets/img/favivon-32.png">
         <title>GDG Cebu Code Camp 2017</title>
-        <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet"> -->
         <link rel="stylesheet" type="text/css" href="/assets/css/home.css">
     </head>
     <body>
-        <div class="main-content">
-            <img src="/assets/img/background.png" class="event-logo"/>
+        <div class="main-content hidden vert-center">
+            <img src="" class="event-logo"/>
             <form action="/certificate.html">
                 <p class="note center">The order # is in your eventbrite ticket</p>
-                <p class="error center hidden"></p>
+                <p class="error center hidden" id="error-container"></p>
                 <input name="order" placeholder="Order #" autofocus class="center">
+                <input name="event" placeholder="Order #" autofocus class="center" type="hidden">
                 <button class="gen-button center">Get Certificate</button>
             </form>
         </div>
+        <p class="error hidden vert-center center full-width">Invalid Event</p>
+        <p class="loading vert-center center full-width">Loading...</p>
         <script src="/assets/js/jquery.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+        <script src="/assets/js/firebase_config.js"></script>
         <script src="/assets/js/login.js"></script>
     </body>
 </html>

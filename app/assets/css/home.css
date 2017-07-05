@@ -15,9 +15,9 @@ body {
 
 .main-content {
     display: block;
-    position: absolute;
+    /*position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%);*/
     width: 100%;
 }
 
@@ -97,4 +97,18 @@ input {
 
 .hidden {
     display: none;
+}
+
+.vert-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.full-width {
+    width: 100%;
+}
+
+.loading {
+    color: green;
 }
