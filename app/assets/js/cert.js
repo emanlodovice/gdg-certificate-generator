@@ -71,8 +71,9 @@ var cert = {
         $('#name').css({'top': this.event.offset_top + 'px'});
         $('img').attr('src', '/assets/img/cert/' + this.event.cert_name);
         $('img').removeClass('hidden');
-        window.print();
-        window.location = '/?event=' + this.eventName;
+        $('img').one('load', function(e) {
+            window.print();
+        });
     }
 
 };

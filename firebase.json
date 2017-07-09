@@ -3,6 +3,17 @@
     "rules": "database.rules.json"
   },
   "hosting": {
-    "public": "app"
+    "public": "app",
+    "headers": [
+        {
+            "source" : "**/*.@(html|js|jpg)",
+            "headers" : [
+                {
+                    "key" : "Cache-Control",
+                    "value" : "no-cache, no-store, must-revalidate"
+                }
+            ]
+        }
+    ]
   }
 }
