@@ -23,6 +23,10 @@ var home = {
         $('.main-content img').attr('src', '/assets/img/logo/' + eventInfo.logo_name);
         var form = $('.main-content form');
         $('.main-content input[name="event"]').val(this.eventName);
+        if (eventInfo.hasOwnProperty('feedback_url')) {
+            $('#feedback a').attr('href', eventInfo.feedback_url).text(eventInfo.feedback_url);
+            $('#feedback').removeClass('hidden');
+        }
         $('.main-content').removeClass('hidden');
     },
 
