@@ -13,7 +13,7 @@ function activate() {
         redirect();
     }
 
-    email = email.replace('.', '__dot__');
+    email = email.replace(/\./g, '__dot__');
 
     var ref = window.firebase.database().ref('wtm2018/participants/' + email);
 
