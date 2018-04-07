@@ -2,6 +2,10 @@ $(document).ready(activate);
 
 
 function activate() {
+    window.onafterprint = function() {
+        redirect()
+    }
+
     var search = window.location.search;
     var key = '?email=';
     var index = search.indexOf(key);
@@ -23,15 +27,18 @@ function activate() {
             $('#name').text(value);
             $('img').removeClass('hidden');
             window.print();
-            redirect();
         } else {
-            redirect();
+            redirect('Sorry! We can\'t find your email in our list of participants!');
         }
     });
 
 
-    function redirect() {
-        window.location = '/wtm2018.html';
+    function redirect(error) {
+        var url = '/wtm2018.html';
+        if (error) {
+            url += '?error=' + error;
+        }
+        window.location = url;
     }
 }
 
